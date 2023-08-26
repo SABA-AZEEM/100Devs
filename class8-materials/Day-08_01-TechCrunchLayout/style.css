@@ -1,0 +1,121 @@
+   /* style for whole page  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/* style for body */
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+                /* style for nav  */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+nav >*{
+    margin: 1rem 0;
+}
+nav h2{
+    color: orange;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    margin: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+nav ul li a:hover{
+    color: green;
+}
+.fa-bars:hover{
+    color: lightgreen;
+}
+.logo{
+    width: 90px;
+}
+.fa-bars{
+    font-size: 1.5rem;
+    color: green;
+    cursor: pointer;
+}
+.disappear{
+    display: none;
+}
+            /* style for main  */
+main{
+    width: 100%;
+}
+main h1{
+    width: 90%;
+    font-weight: 900;
+    margin: 1rem 0;
+}
+main h5{
+    margin: .9rem 0;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.main-img{
+    width: 90%;
+}
+/* style for aside  */
+aside{
+    width: 90%;
+}
+aside ul{
+    list-style: none;
+}
+aside ul li{
+    border-top: 1px solid gray ;
+    padding: 20px 0;
+}
+aside .heading{
+    font-size: 1.3rem;
+    color: green;
+    font-weight: 900;
+}
+aside h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 1rem 0;
+}
+        /* apply media query for desktop */
+@media screen and (min-width:900px) {
+    body{
+        flex-direction: row;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30%;
+    }
+    #dis{
+        display: none;
+    }
+    .logo{
+        height: 50px;
+    }
+    .disappear{
+        display: inline-block;
+    }
+    main{
+        width: 100%;
+    }
+    aside{
+        width: 40%;
+    }
+    
+}
