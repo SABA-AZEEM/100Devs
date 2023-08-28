@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    padding: 1rem 2rem;
+    background-color: whitesmoke;
+    color: rgb(22, 40, 40);
+}
+img{
+    width: 100%;
+}
+    /* header */
+header{
+    border-bottom: 1px solid gray;
+}
+nav{
+    margin-bottom: .5rem;
+}
+.logo{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.logo span{
+    margin-left: 40%;
+    font-size: 1.3em;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 1.3rem 0;
+    padding: 0;
+}
+.nav-link{
+    text-decoration: none;
+    display: inline-block;
+    margin: .5rem 0;
+    color: rgb(22, 40, 40);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+nav button{
+    padding: 5px 10px;
+    background-color: rgb(22, 40, 40);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.visible{
+    height: auto;
+}
+.un-visible{
+    height: 0;
+    display: none
+}
+
+        /* section-1 */
+.sec-1{
+    display: flex;
+    flex-direction: column;
+}
+.sub1 h6{
+        font-size: 1.2rem;
+        color: lightslategray;
+        margin-bottom:8px ;
+}
+.sub1 h1{
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-top: 0;
+}
+.form input{
+    padding: 8px;
+    width: 90%;
+    background-color: rgb(213, 212, 212);
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+.form button{
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 93%;
+    background-color: rgb(22, 40, 40);
+    font-size: 1.3rem;
+    color: white;
+}
+.sub1 p{
+    font-size: 1.1rem;
+}
+                    /* section-3 */
+.sec-3{
+    display: none;
+}
+
+        /* media query for desktop*/
+@media screen and (min-width:700px) {
+            /* header */
+    .fa-bars{
+        display: none;
+    }
+    .logo span{
+        margin-left: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        flex-direction: row;
+        margin: 0;
+    }
+    .nav-link{
+        margin: 0.3rem 1rem;
+    }
+
+            /* section-1  */
+    .sec-1{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sub1{
+        width: 50%;
+    }
+    .sub1 h1{
+        width: 60%;
+    }
+    .form input{
+        width: 40%;
+    }
+    .form button{
+        width: 25%;
+        margin-left: -5px;
+    }
+    .sub1 p{
+        width: 70%;
+    }
+    .sub2{
+        margin-top: 4rem;
+        width: 50%;
+    }
+                /* section-3  */
+    .sec-3{
+        display: flex;
+    }
+    .sec-3 h5{
+        font-size: 1.1rem;
+    }
+    .sec-3 p{
+        margin-right: 12px;
+    }
+    .sec-3 a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+    }
+            
+}
