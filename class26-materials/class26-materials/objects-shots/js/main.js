@@ -3,7 +3,7 @@
 document.querySelector('button').addEventListener('click',()=>{
     
     let inputValue=document.querySelector('input').value;
-    const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${inputValue}`
+    const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='+inputValue;
     fetch(url)
     .then(response=>response.json())
     .then(data=>{     

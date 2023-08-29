@@ -1,0 +1,60 @@
+const container = document.querySelector('.container');
+let currentIndex = 0; // Track the current image index
+
+// Function to move the carousel left
+function moveLeft() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+}
+
+// Function to move the carousel right
+function moveRight() {
+  const totalImages = container.children.length;
+  if (currentIndex < totalImages - 1) {
+    currentIndex++;
+    updateCarousel();
+  }
+}
+
+// Function to update the carousel based on the currentIndex
+function updateCarousel() {
+  const imageWidth = container.clientWidth;
+  const transformValue = -currentIndex * imageWidth;
+  container.style.transform = `translateX(${transformValue}px)`;
+}
+
+document.querySelector('button').addEventListener('click', () => {
+  let inputValue = document.querySelector('input').value;
+  const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + inputValue;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data.drinks);
+      setCarousel(data.drinks);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
+
+// Function to set up the carousel with images
+function setCarousel(data) {
+  currentIndex = 0; // Reset currentIndex when setting up the carousel
+  const container = document.querySelector('.container');
+  container.innerHTML = ''; // Clear existing images
+
+  data.forEach(item => {
+    let imgEl = document.createElement('img');
+    imgEl.src = item.strDrinkThumb;
+    container.appendChild(imgEl);
+  });
+
+  // Update the carousel after setting up images
+  updateCarousel();
+}
+
+// Add event listeners to move the carousel
+document.querySelector('.move-left').addEventListener('click', moveLeft);
+document.querySelector('.move-right').addEventListener('click', moveRight);
