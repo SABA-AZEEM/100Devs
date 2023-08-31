@@ -8,8 +8,16 @@ url=`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`;
 fetch(url)
 .then(res=>res.json())
 .then(data=>{
+    console.log(data);
     document.querySelector('h2').innerText=data.title;
-    document.querySelector('img').src=data.url;
+    if(data.media_type==='image'){
+        document.querySelector('img').src=data.url;
+        document.querySelector('iframe').src="";
+    }else if(data.media_type==='video'){
+        document.querySelector('img').src="";
+        document.querySelector('iframe').src=data.url;
+    }
+    
     document.querySelector('h3').innerText=data.explanation;
 })
 .catch(error=>{

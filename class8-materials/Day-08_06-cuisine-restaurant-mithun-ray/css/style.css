@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img{
+    width: 100%;
+  }
+  html {
+    font-size: 15px;
+  }
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .pad{
+    padding: 1rem 2rem;
+  }
+  
+  /* css for TopMostSec class */
+  .TopMostSec {
+    background-image: url("../imgs/header1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 6rem;
+  }
+  .sub{
+    margin: 6rem;
+  }
+  .fa-bars{
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+   header nav {
+    display: none;
+  }
+  .visible{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .TopMostSec a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .TopMostSec h1 {
+    width: 50%;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  
+  .TopMostSec form {
+    width: 50%;
+  }
+  
+  .TopMostSec form input {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    color: rgb(209, 203, 203);
+    /* width: 70%; */
+  }
+  
+  .TopMostSec button {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: orange;
+    color: white;
+    width: 55%;
+    cursor: pointer;
+    margin-top: .4rem;
+  }
+  
+  .TopMostSec ul {
+    list-style: none;
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+  .TopMostSec ul li {
+   margin-right: 15px;
+  }
+  
+  .TopMostSec ul li i {
+    margin-right: 5px;
+    color: orange;
+  }
+
+  
+  /* section 2 css */
+  .sec2 {
+    background-image: url("https://media.istockphoto.com/id/1211603563/photo/mixed-fresh-vegetables-and-hummus-top-view-corner-border-on-a-white-marble-background.jpg?s=612x612&w=0&k=20&c=ErEdY_05aVSXQW0sM7f7L9oU9-L3m3on4USdc1qYuf4=");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4rem ;
+  }
+  
+  .sec2 div {
+   width: 100%;
+  }
+  
+  .sec2 div h5 {
+    color: orange;
+    margin: 2rem 0 1rem 0;
+    font-size: 1rem;
+  }
+  
+  .sec2 h2 {
+    font-size: 2rem;
+    width: 40%;
+  }
+  
+  .sec2 p {
+    margin: 1rem 0;
+    width: 90%;
+    font-weight: 600;
+  }
+  
+  .sec2 button {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+    border: none;
+    outline: none;
+  }
+
+
+                      
+  
+  /* css for sec 3 */
+  .sec3 {
+    background-color: rgb(191, 210, 216);
+  }
+  
+  .sec3 div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .sec3 h5 {
+    margin-top: 1rem;
+    color: rgb(206, 135, 4);
+  }
+  
+  .sec3 h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+  } 
+  .sec3 ul {
+    list-style: none;
+    border-bottom: 1px dotted gray;
+  }
+  
+  .sec3 li {
+    float: left;
+    margin: 1rem;
+  }
+  .sec3 a {
+    text-decoration: none;
+    color: black;
+  }
+  .sec3 .clr {
+    color: rgb(216, 143, 8);
+  }
+  .sub3 img {
+    width: 70%;
+    margin: 1rem;
+  }
+  
+  .sec3 hr {
+    padding: 1rem;
+    width: 5%;
+    margin: 0 auto;
+    border: 5px dotted orange;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  /* css for section 4 */
+  .sec4 {
+    background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tncm91bmQlMjBpbWFnZXMlMjBmb3IlMjByZXN0YXVyYW50JTIwd2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sec4 h5 {
+    color: rgb(224, 147, 4);
+    padding-top: 2rem;
+    font-weight: 800;
+  }
+  
+  .sec4 h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  
+  .fa-phone {
+    color: rgb(204, 135, 6);
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .sec4 span {
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .sec4 h4 {
+    font-size: 2rem;
+    color: rgb(207, 135, 2);
+    border-bottom: 1rem;
+  }
+  
+  .sec4 div {
+    margin: 1rem 33rem;
+    /* display: flex; */
+    /* width: 100%; */
+  }
+  .sec4 .timings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .timings section{
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .imges {
+    position: relative;
+  }
+  
+  .imges img {
+    width: 200px;
+  }
+  
+  .imges i {
+    position: absolute;
+  }
+  
+  .imges .fa-solid {
+    border-radius: 50%;
+    border: 4px solid rgb(211, 138, 2);
+    padding: 5px;
+    font-size: 1.5rem;
+    top: 40%;
+    color: rgb(201, 132, 4);
+    font-weight: 900;
+  }
+  
+  .fa-angles-left {
+    left: -22%;
+  }
+  
+  .fa-angles-right {
+    right: -22%;
+  }
+
+  /* css for section 5 */
+  .sec5 {
+    background-color: rgb(182, 209, 218);
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .sec5 h5 {
+    color: rgb(206, 135, 5);
+    margin-bottom: 1rem;
+  }
+  
+  .sec5 h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+  }
+  
+  .sec5 img {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  .sec5 .rating {
+    margin: 1rem;
+  }
+  
+  .sec5 .star {
+    color: rgb(223, 146, 2);
+  }
+  
+  .sec5 p {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .sec5 hr {
+    width: 5%;
+    margin: 1rem auto;
+    border: none;
+    border-top: 5px dotted rgb(218, 142, 2);
+  }
+
+                  /* media query for desktop */
+@media screen  and (min-width:700px){
+    /* top Most section  */
+.fa-bars{
+display: none;
+}
+header nav{
+display: flex;
+}
+.TopMostSec a{
+margin: 0 20px 0 0;
+}
+.TopMostSec h1{
+width: 30%;
+}
+.TopMostSec button{
+border-radius: 0 5px 5px 0;
+margin-left: -5px;
+width: auto;
+}
+    /* section-2  */
+.sec2 div{
+width: 70%;
+}
+          /* section-3  */
+.sec3 .sub3{
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+          /* section-4  */
+.sec4 .timings{
+  flex-direction: row;
+  justify-content: center;
+}
+.timings section{
+  margin: 1rem;
+}
+.imges img{
+  width: 400px;
+}
+      
+}
+  
