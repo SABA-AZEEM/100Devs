@@ -1,0 +1,274 @@
+    /* style for whole websit */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 16px;
+    }
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    img{
+        width: 100%;
+    }
+    
+        /* style for header */
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color:whitesmoke;
+        color: black;
+        padding: 0 2rem;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .logo span{
+        font-family: 'Fasthand', cursive;
+        
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    header nav a{
+        text-decoration: none;
+        margin: .4rem 0;
+        color: black;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    header button{
+        border: none;
+        outline: none;
+        background-color: whitesmoke;
+        margin: 1rem 0;
+        font-weight: 800;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 30;
+    }
+@media screen and (min-width:700px) {
+    
+}
+        /* css for section-1 */
+    /* .sec1{
+        background-image: url("https://pbs.twimg.com/media/FLUCUd6XECMYEQm?format=jpg&name=4096x4096");
+        background-size: cover;
+        height: 90vh;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        position: relative;  
+    }
+    .sec1 .text{
+       padding: 6rem;
+       color: white;
+    }
+    .text h1{
+        font-size: 4rem;
+        text-transform: uppercase;
+        width: 40%;
+        font-weight: 100;
+    }
+    .text h5{
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-weight: 300;
+    }
+    .text button{
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        border: white;
+        width: 9rem;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .fa-solid{
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        padding: 1rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 8rem;
+        cursor: pointer;
+    }
+    .fa-arrow-left{
+        right: 4.1rem;
+    } */
+        /* css for card section */
+    /* .card{
+        background-color: black;
+        color: white;
+        margin: 4rem 6rem;
+        width: 13%;
+        padding: 2rem;
+        z-index: 1;
+        text-transform: uppercase;
+        position: absolute;
+        top: 26rem;
+    }
+    .card h4{
+        padding: 1rem 0;
+        font-weight: 700;
+    }
+    .card h3{
+        font-weight: 300;
+    }
+    .card span{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .card button{
+        
+        color: black;
+        padding: 1rem;
+        margin: 1rem 0;
+        border: white;
+        width: 9rem;
+        cursor: pointer;
+        text-transform: uppercase;
+    } */
+        /* css for sec2 */
+    /* .sec2{
+        margin: 12rem 5rem 4rem 5rem;
+        height: 30vh;
+    }
+    .sec2 .sec2sub{
+        width: 25%;
+        float: left;
+        margin:  3rem ;
+        text-align: center;
+    }
+    .sec2sub h3{
+        text-transform: uppercase;
+        font-family: 'Fasthand', cursive;
+    }
+    .sec2sub p{
+        margin-top: 1.2rem;
+    } */
+        /* css for section-3  */
+    /* .sec3{
+        background-color: whitesmoke;
+        height: 60vh;
+    }
+    .sec3 img{
+        width: 300px;
+    }
+    .sub{
+        width: 30%;
+        float: left;
+        margin: 3rem 6rem;
+    }
+    .sec3 .sec3sub1{
+        margin-left: 15rem;
+        margin-right: 1rem;
+    }
+    .sec3sub1 h2{
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    .sec3sub1 p{
+        margin: 1.3rem 0;
+    }
+    .sec3sub1 button{
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        width: 8rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    } */
+    
+            /* css for section-4 */
+    /* .sec4{
+        margin: 3rem 8rem;
+        height: 50vh;
+    }
+    .sec4 img{
+        width: 200px;
+    }
+    .sub1{
+        position: relative;
+    }
+    .sec4 .sub1{
+        float: left;
+        margin: 2rem 5rem;
+    }
+    .sec4 .sub2{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: .5rem 0;
+        width: 80%;
+        position: absolute;
+        left: 1.1rem;
+        bottom: -1.1rem;
+    } */
+            /* css for section-5 */
+    /* .sec5{
+        height: 70vh;
+        margin: 3rem 8rem;
+        background-image: url('https://media.istockphoto.com/id/1376080879/photo/cheerful-smiling-model-profile-side-view-brunette-beauty-woman-with-nude-make-up-smooth-skin.webp?b=1&s=170667a&w=0&k=20&c=EwQKeDTwl5rGk_9d585dBPxz2DabnGFd9P8cndquhqo=');
+        background-size: cover;
+    }
+    .sec5 .sub{
+        margin: 7rem ;
+        color: white;
+    }
+    .sec5 h5{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    .sec5 h2{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 100;
+        margin: 1rem 0;
+    }
+    .sec5 span{
+        font-weight: 900;
+    }
+    .sec5 button{
+        padding: 10px 5px ;
+        width: 50%;
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    } */
+    
+            /* style for section-6 */
+    /* .sec6 {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 6rem 8rem;
+    }
+    .sec6 hr{
+        width: 1.3rem;
+        margin: 2rem auto;
+        color: black;
+        border: 2px solid black;
+    }
+            /* style for section 7 */
+    .sec7{
+        margin: 0 8rem;
+        display: flex;
+        flex-wrap: wrap
+    }
+    .sec7 img{
+        width: 200px;
+        
+    } */
