@@ -1,6 +1,7 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import cors from 'cors';
 
 // Use import.meta.url to get the current module's URL
 const __filename = fileURLToPath(import.meta.url);
@@ -8,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 // Use dirname to get the directory name
 const __dirname = dirname(__filename);
 const app=express();
+app.use(cors());
 const PORT=8000;
 //object
 const student={
