@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note_Taking_WebApp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Notes Taking Appp</h1>
+    </header>
+    <form action="submit" method="post" class="form">
+        <input type="text" name="title" placeholder="Title" required>
+        <textarea name="note" id="note" cols="15" rows="4" placeholder="Take a note..."></textarea>
+        <input type="submit" value="+">
+    </form>
+    
+    <%notes.forEach((item)=>{%>
+        <div class="container">
+            <!-- <h1><%=item.title%></h1> -->
+            <p class="note-text">
+                <span class="heading"><%=item.title%></span>
+                <br>
+                <span class="note"><%=item.note%></span>
+            </p>
+
+            <form class="update-form" style="display: none;">
+                <input type="text" class="update-title " value="<%=item.title%>">
+                <textarea class="update-note " rows="4"><%=item.note%></textarea>
+                <button class="save-update" value="<%=item._id%>">Save</button>
+            </form>
+
+            <div class="buttons">
+                <button class="del" value="<%=item._id%>">Delete</button>
+                <button class="update-btn">Update</button>
+            </div>
+        </div>
+    <%})%>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
