@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs') %>
+        <h1>HOME</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat hic temporibus eaque repellendus. Facilis adipisci at dolorum. Quidem quod fugit quas tempore? Recusandae voluptatum corporis, adipisci itaque doloribus id praesentium maxime quasi corrupti ex quos, quis perferendis nesciunt sint tenetur at aliquam dolor delectus totam saepe cupiditate assumenda quidem. Nulla quod quibusdam vitae, voluptate qui nemo ex ea. Dolorem nisi laborum ullam eius omnis autem expedita distinctio eum, maiores aspernatur facere, commodi ipsam quos consequuntur, obcaecati voluptatum eaque velit quaerat beatae molestias sed fugiat culpa incidunt. Quisquam dignissimos pariatur assumenda asperiores officiis ex corrupti illum amet, velit cumque voluptate quasi.</p>
+
+        <% posts.forEach((post)=>{ %>
+            <h1> <%=post.title%> </h1>
+            <p> <%=post.content.substring(0,100)+'...'%>
+            <a href="/posts/<%=post._id%>">Read More</a>
+            </p>
+       <% }) %>
+
+<%- include('partials/footer.ejs') %>
