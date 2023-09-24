@@ -47,6 +47,7 @@ app.get('/posts/:id',async(req,res)=>{
         res.render('post.ejs',{
             title:post.title,
             content:post.content,
+            id:post._id,
         });
 });
 //if user click on header's compose button
@@ -73,6 +74,33 @@ app.get('/contact',(req,res)=>{
 //route for about button
 app.get('/about',(req,res)=>{
     res.render("about.ejs");
+})
+//route for delete
+app.delete('/del/:id',async(req,res)=>{
+    try{
+        const result=await Blog.deleteOne({_id:req.params.id});
+        console.log("Item deleted");
+        res.json("item deleted");
+    }catch(err){
+        console.log(err);
+    }
+});
+//update post
+app.put('/update',async(req,res)=>{
+    try{
+        const response=await Blog.updateOne({_id:req.body.id},
+            {
+                $set:{
+                    title:req.body.title,
+                    content:req.body.content,
+                }
+            },{
+                    upsert:false,
+            });
+            res.json('update successfully');
+    }catch(err){
+        console.log(err);
+    }
 })
 
 app.listen(process.env.PORT || PORT,()=>{

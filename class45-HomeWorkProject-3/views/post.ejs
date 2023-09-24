@@ -1,6 +1,19 @@
 <%- include('partials/header.ejs') %>
 
-<h1><%=title%></h1>
-<p><%=content%></p>
+<div class="save-container">
+    <h1><%=title%></h1>
+    <p><%=content%></p>
+    <button id="del-btn" value="<%=id%>">Delete</button>
+    <button id="update-btn" value="<%=id%>">Update</button>
+</div>
+<div class="update-container" style="display:none;">
+    <form>
+        <label for="update-title">Title</label>
+        <input type="text" name="putTitle" id="update-title" value="<%=title%>">
+        <label for="update-content">Post</label>
+        <textarea name="putContent" id="update-content" cols="30" rows="10" ><%=content%></textarea>
+        <button id="save-btn" value="<%=id%>">Save</button>
+    </form>
+</div>
 
 <%- include('partials/footer.ejs') %>
