@@ -70,37 +70,93 @@
     margin-right:10px ;
 }
             /* main  */
-#main-img{
-    background-color: red;
-    padding: 10rem 1rem 1rem 1rem;
+#main-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #main-img::before {
+    content: "";
+    background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3cyUyMHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(3px); /* Adjust the blur amount as needed */
+    z-index: -1;
+  }
+  
+  #main-img h1,
+  #main-img p,
+  #main-img span {
     color: white;
-}
+    font-weight: 700;
+    position: relative;
+    top: 14rem;
+    z-index: 1;
+  }
+  
+
 .main-articles article{
     background-color: blue;
     color: white;
+    font-weight: 800;
     margin: 1rem 0;
     padding: 5rem 1rem 1rem 1rem;
+    font-weight: 900;
 }
-
+#article-1{
+    background-image: url('https://media.istockphoto.com/id/636803022/photo/news-on-laptop-screen.webp?b=1&s=170667a&w=0&k=20&c=eP7_9Mw4jGMzJomALREK_ggyTnwDYKgEfpZV2uKAQfo=');
+    background-size: cover;
+    background-position: center;
+}
+#article-2{
+    background-image: url('https://media.istockphoto.com/id/1449698253/photo/green-screen-phone-mockup-and-woman-blue-mobile-app-for-advertising-brand-and-digital.webp?b=1&s=170667a&w=0&k=20&c=ioPEbeF-acGxYLqUOHgWR5Hm3j4YWHNEbNKZ52wNOFo=');
+    background-size: cover;
+    background-position: center;
+}
+#article-3{
+    background-image: url('https://media.istockphoto.com/id/1139033408/photo/spreading-the-word-out.webp?b=1&s=170667a&w=0&k=20&c=cDm29TnkTOcb7ytJhQ25SPQrqUcBskgrCOZlMufkHL0=');
+    background-size: cover;
+    background-position: center;
+}
+#article-4{
+    background-image: url('https://media.istockphoto.com/id/1452660227/photo/lgbtq-woman-phone-and-living-room-sofa-social-media-notification-and-web-connection-ro-relax.webp?b=1&s=170667a&w=0&k=20&c=2Vwi1nfOmMAPN3Kf9LkQGFpJZT7MirU--tU3jxmMMPU=');
+    background-size: cover;
+    background-position: center;
+}
 .sec-2 article{
     margin: 1rem 0;
 }
  .bottom-img{
-    background-color: black;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 200px;
     margin:  1rem 0 ;
 }
+#article-5{
+    background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3cyUyMHdlYnNpdGUlMjBpbWFnZXMlMjB3aXRoJTIwYmx1ciUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+}
+#article-6{
+    background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmV3cyUyMHdlYnNpdGUlMjBpbWFnZXMlMjB3aXRoJTIwYmx1ciUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+}
+#article-7{
+    background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5ld3MlMjB3ZWJzaXRlJTIwaW1hZ2VzJTIwd2l0aCUyMGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+}
 footer{
-    background-color: purple;
+    background-color: black;
     color: white;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 
 /* media query for desktop */
- @media screen and (min-width:1420px){
+ @media screen and (min-width:900px){
     .row{
         flex-direction: row;
     }

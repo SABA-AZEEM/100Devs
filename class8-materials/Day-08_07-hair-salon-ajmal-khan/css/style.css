@@ -278,9 +278,7 @@
      .sec7{
         margin: 0 auto;
         display: flex;
-        align-items: flex-start; 
-        height: 100vh; 
-        flex-wrap: wrap;
+        justify-content: center; 
     }
     .sec7 img{
         width: 200px;
